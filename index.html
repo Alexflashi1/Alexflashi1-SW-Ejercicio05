@@ -3,32 +3,29 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Números Pares e Impares</title>
+	<title></title>
 	<link rel="stylesheet" href="">
 	<script type="text/javascript">
-		//Se declaran las variables con las que se va a trabajar el arreglo
+		//Primero declaro el arreglo con el que voy a trabajar, en esta ocasión son 10 números
+		var miarreglo=[141,545,4,44,415,224,874,147,124,140]
+		//Muestro en un alert el arreglo
+		alert(miarreglo);
+		//Ahora lo siguiente que haré es mostrar los números pares e impares primero declaro a la variable i para poder hacer la condición
 
-		var nuevoarray=[5,7,3,10,4,3,2,8,13,14]
-		//Mostrar los valores del arreglo
-		alert(nuevoarray);
-		//Crear la condición para mostrar número par o impar
-			if (nuevoarray[0]%2==0) {alert(nuevoarray[0]+" Es un número par")}else{alert(nuevoarray[0]+" es impar")}
-			if (nuevoarray[1]%2==0) {alert(nuevoarray[1]+" Es un número par")}else{alert(nuevoarray[1]+" es impar")}
-			if (nuevoarray[2]%2==0) {alert(nuevoarray[2]+" Es un número par")}else{alert(nuevoarray[2]+" es impar")}
-			if (nuevoarray[3]%2==0) {alert(nuevoarray[3]+" Es un número par")}else{alert(nuevoarray[3]+" es impar")}
-			if (nuevoarray[4]%2==0) {alert(nuevoarray[4]+" Es un número par")}else{alert(nuevoarray[4]+" es impar")}
-			if (nuevoarray[5]%2==0) {alert(nuevoarray[5]+" Es un número par")}else{alert(nuevoarray[5]+" es impar")}
-			if (nuevoarray[6]%2==0) {alert(nuevoarray[6]+" Es un número par")}else{alert(nuevoarray[6]+" es impar")}
-			if (nuevoarray[7]%2==0) {alert(nuevoarray[7]+" Es un número par")}else{alert(nuevoarray[7]+" es impar")}
-			if (nuevoarray[8]%2==0) {alert(nuevoarray[8]+" Es un número par")}else{alert(nuevoarray[8]+" es impar")}
-			if (nuevoarray[9]%2==0) {alert(nuevoarray[9]+" Es un número par")}else{alert(nuevoarray[9]+" es impar")}
-			
-			
-
+		var i=0;
+		//Comienzo el ciclo con while y condiciono que solo sean 10 números
+		while (i<10) {
+			//Ahora creo la condicional para saber que número es par o impar
+			if (miarreglo[i]%2==0) {
+				alert("El número " + miarreglo[i]+" es par")// Si el resuduo es igual a 0 entonces el número es par
+			} else {
+				alert("El número "+ miarreglo[i] + " es impar")//Si es distinto de 0 el número es impar
+			}
+			i++ //Para evitar que el ciclo sea eterno uso el más más
+		}
 	</script>
 </head>
 <body>
-
 	
 </body>
 </html>
